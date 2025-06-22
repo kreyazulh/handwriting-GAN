@@ -158,7 +158,7 @@ def main():
                     st.image(
                         pil_image, 
                         caption=f"Sample {i+1}",
-                        use_column_width=True
+                        use_container_width=True
                     )
                     
                     # Add download button
@@ -191,7 +191,7 @@ def main():
                 st.image(
                     placeholder_img, 
                     caption=f"Sample {i+1}",
-                    use_column_width=True
+                    use_container_width=True
                 )
 
 
