@@ -121,7 +121,7 @@ def main():
         selected_digit = st.selectbox(
             "Choose a digit to generate (0-9):",
             options=list(range(10)),
-            index=2
+            index=4
         )
         
         # Generation button
