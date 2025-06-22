@@ -10,7 +10,8 @@ import base64
 st.set_page_config(
     page_title="Handwritten Digit Generator",
     page_icon="🔢",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="expanded"
 )
 
 # Generator class (same as training script)
@@ -178,8 +179,8 @@ def main():
         st.info("👆 Select a digit and click 'Generate Images' to create handwritten digit samples")
         
         # Show example
-        st.subheader("Example Output")
-        st.markdown("The digits will be visible once you generate:")
+        st.subheader("Generate Images from Sidebar")
+        st.markdown("Here's where the generated images will show up:")
         
         # Create placeholder images to show the layout
         cols = st.columns(5)
@@ -192,7 +193,6 @@ def main():
                     caption=f"Sample {i+1}",
                     use_column_width=True
                 )
-
 
 
 if __name__ == "__main__":
